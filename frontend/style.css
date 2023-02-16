@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{ 
+    /* Background Color */
+    --bg-danger:#f63440;
+    --bg-white:#fff;
+    --bg-light-white:#f5f5f5;
+
+    /* Text Color */
+    --primary-font:"Poppins", sans-serif;
+    --text-white:#fff;
+    --text-black:#121212; 
+    --text-danger:#f63440; 
+    --text-gray:#aaa;
+    --text-dark-gray:#777;
+}  
+body {
+    font-family:var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    background:var(--bg-white);
+    color: var(--text-black);
+    overflow-x:hidden;
+} 
+
+/* Custom CSS */
+a,
+a:hover{
+    text-decoration: none;
+}
+p{
+    margin:0;
+}
+.btn-danger{
+    background:var(--bg-danger);
+    border-color:var(--bg-danger);
+    padding:0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-danger:hover{
+    color:var(--text-danger);
+    background:transparent; 
+}
+
+
+/* navigation css */
+
+.fixed-top{
+    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 13%);
+}
+.navbar-nav .nav-item .nav-link{
+    color:var(--text-danger);
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link.active{
+    color:var(--bg-danger);
+}
+.navbar-nav .nav-item .nav-link:hover{
+    
+    font-weight:bold;
+}
+
+.navbar-toggler-icon{
+    width: unset;
+    height: unset;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.icon{
+    
+    padding-right: 30px;
+}
+.bs-example{
+    margin: 50px;
+}
+.bs-example a{
+    font-size: 22px;        
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* Home Css */
+.carousel-item{
+    height: 80vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+} 
+.carousel-caption{
+    padding-top: 100px;
+    bottom: 100px;
+    padding-left: 200px;
+
+}
+.carousel-caption h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.slider-btn{
+    margin-top: 30px;
+}
+.slider-btn .btn2{
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.slider-btn .btn2:hover{
+    color: var(--text-danger);
+    font-weight: bold;
+}
+
+/* products */
+.btn{
+    position: relative;
+    left: 70px;
+    font-size: 10px;
+    border-color: #121212;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.btn:hover{
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Special Sale */
+
+.special .countdown-container{
+    padding-top:2px;
+}
+.special .countdown-container p{
+    color:var(--text-dark-gray);
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+.special .countdown-container .countdown-counter{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:0;
+    margin-bottom:1.875rem;
+}
+.special .countdown-container .countdown-counter li{
+    display:inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    background:var(--bg-white);
+    border-radius: 0.313rem;
+    padding: 3rem -1rem;
+    width: 15%;
+    margin: 0 0.313rem;
+}
+.special .countdown-container .countdown-counter li span{
+    font-weight: 500;
+}
+
+.special .special-img span{
+    background:var(--bg-danger);
+    border-radius: 0.313rem;
+    color:var(--text-white);
+    font-size: 0.813rem;
+    letter-spacing:0.125rem;
+    line-height:1.563rem;
+    padding:0.125rem 0.813rem;
+    text-transform: uppercase;
+    left:1rem;
+    top:1.188rem;
+    z-index: 99;
+}
+.special .special-img img{
+    border-radius: 6px;
+}
+.button{
+    font-size: 12px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button:hover{
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About */
+.testimonial{
+    margin-top: 4rem;
+}
+
+.testimonial .testimonial-wrapper{
+    box-shadow: 0 0 0.563rem 0 rgb(0 0 0  / 5%);
+    background:#F5F5F5;
+    margin:auto;
+    padding:2rem 5rem;
+    border:0.063rem solid var(--bg-light-white);
+    border-radius: 0.625rem;
+}
+.testimonial .testimonial-wrapper img{
+    border-radius: 100%;
+    width:10rem;
+    height:10rem;
+    margin:1.25rem auto;
+    object-fit:cover;
+    background-color:var(--bg-white);
+    border:0.063rem solid var(--bg-light-white);
+}
+
+.testimonial .testimonial-wrapper span{
+    color:var(--text-black);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin:1rem 0;
+    display:block;
+}
+.testimonial .testimonial-wrapper p{
+    color:var(--text-dark-gray);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.testimonial .carousel-indicators [data-bs-target]{
+    background-color:var(--bg-danger);
+    width:2.5rem;
+    height:0.313rem;
+}
+.testimonial .carousel-control-next-icon,
+.testimonial .carousel-control-prev-icon{
+    background: transparent;
+}
+.testimonial .carousel-indicators{
+    bottom:-3rem;
+}
+.testimonial .slider-icon{
+    font-size: 3rem;
+    font-weight: 600;
+    color:var(--text-danger);
+}
+.testimonial .carousel-control-prev{
+    left:-8.75rem;
+}
+.testimonial .carousel-control-next{
+    right:-8.75rem;
+}
+.headline text-center mb-5{
+    margin-top: 5rem;
+}
+
+
+/* Other Farm */
+.testimonial2{
+    margin-top: 4rem;
+}
+
+.testimonial2 .testimonial-wrapper{
+    box-shadow: 0 0 0.563rem 0 rgb(0 0 0  / 5%);
+    background:#F5F5F5;
+    margin:auto;
+    padding:2rem 5rem;
+    border:0.063rem solid var(--bg-light-white);
+    border-radius: 0.625rem;
+}
+.testimonial2 .testimonial-wrapper img{
+    border-radius: 100%;
+    width:10rem;
+    height:10rem;
+    margin:1.25rem auto;
+    object-fit:cover;
+    background-color:var(--bg-white);
+    border:0.063rem solid var(--bg-light-white);
+}
+
+.testimonial2 .testimonial-wrapper span{
+    color:var(--text-black);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin:1rem 0;
+    display:block;
+}
+.testimonial2 .testimonial-wrapper p{
+    color:var(--text-dark-gray);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #777;
+    border-radius: 50%;
+    top: 45%;
+    opacity: 1.3;
+}
+.carousel-control-prev{
+    left: 5%;
+}
+.carousel-control-next{
+    right: 5%;
+}
+
+.headline text-center mb-5{
+    margin-top: 5rem;
+}
+
+/* Contact Us */
+
+.btn3{
+    background-color: #4b48f0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+    color: #F5F5F5;
+}
+.btn3:hover{
+    font-weight: bold;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 10px;
+}
+.footer .wrapper{
+    background-color:black ;
+}
+.footer .link a{
+   color: white;
+}
+.footer .quick{
+    color: var(--text-danger);
+}
+.footer .link a:hover{
+    text-decoration-line: underline;
+}
+.footer span{
+    color: #F5F5F5;
+}
+.bi bi-facebook{
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
